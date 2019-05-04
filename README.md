@@ -1,8 +1,13 @@
 shenanigans
 ==============================================================================
 
-[Short description of the addon.]
+List of known issues:
 
+1.  name + moduleName() differ
+2.  `addon/index.js` imports `shenanigans/bar` which although contained within this modules `moduleName` is provided via pre-built vendor tree
+3. treeForVendor pulls in an external file, and uses the ember-cli-babel addon to compile it's contents, including it's es module
+
+Note: I have also included other funky things it does, just in-case those also cause grief.
 
 Compatibility
 ------------------------------------------------------------------------------
